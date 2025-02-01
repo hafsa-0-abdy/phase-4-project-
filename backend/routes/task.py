@@ -25,14 +25,8 @@ def get_tasks():
     ]
     return jsonify(tasks_list), 200
 
-
-from flask import Blueprint, request, jsonify
-from models import db, Task
-from flask_jwt_extended import jwt_required, get_jwt_identity
-
-task_routes = Blueprint("task", __name__)
-
-@task_routes.route("/<int:task_id>", methods=["GET"])  # ✅ FIXED: No extra "/tasks"
+# ✅ Get Task by ID
+@task_routes.route("/<int:task_id>", methods=["GET"])  
 @jwt_required()
 def get_task_by_id(task_id):
     user_id = get_jwt_identity()
@@ -50,7 +44,6 @@ def get_task_by_id(task_id):
         "status": task.status
     }), 200
 
-
 # ✅ Create a New Task
 @task_routes.route("/", methods=["POST"])
 @jwt_required()
@@ -62,7 +55,7 @@ def create_task():
         new_task = Task(
             title=data["title"],
             description=data.get("description"),
-            due_date=datetime.strptime(data["due_date"], "%Y-%m-%d"),  # ✅ Fix date issue
+            due_date=datetime.strptime(data["due_date"], "%Y-%m-%d"),  
             priority=data["priority"],
             status="Pending",
             user_id=user_id
@@ -72,7 +65,6 @@ def create_task():
         return jsonify({"message": "Task created successfully"}), 201
     except Exception as e:
         return jsonify({"error": str(e)}), 400
-
 
 # ✅ Update a Task
 @task_routes.route("/<int:task_id>", methods=["PUT"])
@@ -93,7 +85,6 @@ def update_task(task_id):
 
     db.session.commit()
     return jsonify({"message": "Task updated successfully"}), 200
-
 
 # ✅ Delete a Task
 @task_routes.route("/<int:task_id>", methods=["DELETE"])

@@ -9,8 +9,12 @@ auth_routes = Blueprint("auth", __name__)
 @auth_routes.route("/signup", methods=["POST"])
 def signup():
     data = request.get_json()
-    hashed_password = generate_password_hash(data["password"], method="pbkdf2:sha256")
 
+    # Check if email already exists
+    if User.query.filter_by(email=data["email"]).first():
+        return jsonify({"error": "Email already in use"}), 400
+
+    hashed_password = generate_password_hash(data["password"], method="pbkdf2:sha256")
     new_user = User(email=data["email"], password=hashed_password)
     db.session.add(new_user)
     db.session.commit()

@@ -1,0 +1,51 @@
+
+body {
+  background-color: #f8f9fa; /* Light gray */
+  color: rgb(218, 35, 208);
+  font-family: "Arial", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+ 
+}
+/* Navbar */
+.navbar {
+  display: flex;  
+  justify-content: space-between;  
+}
+
+
+/* Footer */
+.footer {
+  background: #007bff;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+/* Ensure pages are properly centered */
+.page-container {
+  display: flex;
+  flex-direction: vertical;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80vh; /* Push pages into view */
+  padding: 80px 20px; /* Prevent hiding under navbar */
+}
+
+/* Ensure main content is visible */
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 900px;
+  margin-top: 100px; /* Push content below navbar */
+  text-align: center; /* Center text */
+  
+}
+

@@ -9,14 +9,7 @@ const Home = () => {
         and stay organized. With features like task management, study plans, and progress tracking, 
         this app ensures you stay on top of your academic responsibilities.
       </p>
-
-      {/* <h2>🔍 Features</h2>
-      <ul className="feature-list">
-        <li>✅ Organize and track tasks</li>
-        <li>📆 Plan and schedule study sessions</li>
-        <li>📊 View your progress in real-time</li>
-      </ul> */}
-
+      
       <h3>🚀 Get Started</h3>
       <p>Sign up and start managing your academic life efficiently!</p>
 

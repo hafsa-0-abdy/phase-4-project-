@@ -6,7 +6,12 @@ const Navbar = () => {
   const { user, logout } = useContext(UserContext);
   const navigate = useNavigate();
 
-  console.log("Navbar User State:", user);  // 🔍 Debugging
+  console.log("Navbar User State:", user); // 🔍 Debugging
+
+  const handleLogout = () => {
+    console.log("🛑 Logout Button Clicked!"); // ✅ Debugging
+    logout(navigate);
+  };
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -28,7 +33,7 @@ const Navbar = () => {
             </li>
             {user ? (
               <li className="nav-item">
-                <button className="btn btn-danger ms-3" onClick={() => logout(navigate)}>
+                <button className="btn btn-danger ms-3" onClick={handleLogout}>
                   Logout
                 </button>
               </li>

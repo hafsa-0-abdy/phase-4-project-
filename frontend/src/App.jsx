@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Task from "./pages/Task";
 import Progress from "./pages/Progress";
+import StudyPlans from "./pages/StudyPlans";
 
 const App = () => {
   return (
@@ -18,6 +19,8 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/tasks" element={<Task />} />
         <Route path="/progress" element={<Progress />} />
+        <Route path="/study-plans" element={<StudyPlans />} />
+        
       </Routes>
     </>
   );

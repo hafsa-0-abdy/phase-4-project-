@@ -2,56 +2,38 @@ import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { UserContext } from "../context/UserContext";
 
+
 const Navbar = () => {
   const { user, logout } = useContext(UserContext);
   const navigate = useNavigate();
 
-  console.log("Navbar User State:", user); // 🔍 Debugging
+  console.log("Navbar User State:", user);
 
   const handleLogout = () => {
-    console.log("🛑 Logout Button Clicked!"); // ✅ Debugging
+    console.log("🛑 Logout Button Clicked!");
     logout(navigate);
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div className="container">
-        <Link className="navbar-brand" to="/">📚 Student Productivity</Link>
-        <div className="collapse navbar-collapse">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/tasks">Tasks</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/progress">Progress</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/profile">Profile</Link>
-            </li>
-            {/* <li className="nav-item">
-              <Link className="nav-link" to="/study-plans">Study Plans</Link>
-            </li> */}
-
-            {user ? (
-              <li className="nav-item">
-                <button className="btn btn-danger ms-3" onClick={handleLogout}>
-                  Logout
-                </button>
-              </li>
-            ) : (
-              <>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/login">Login</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/register">Register</Link>
-                </li>
-              </>
-            )}
-          </ul>
+    <nav className="navbar">
+      <div className="navbar-container">
+        <Link className="logo" to="/">📚 Student Productivity</Link>
+        <ul className="nav-links">
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/tasks">Tasks</Link></li>
+          <li><Link to="/progress">Progress</Link></li>
+          <li><Link to="/study-plans">Study Plans</Link></li>
+          <li><Link to="/profile">Profile</Link></li>
+        </ul>
+        <div className="auth-buttons">
+          {user ? (
+            <button className="logout-btn" onClick={handleLogout}>Logout</button>
+          ) : (
+            <>
+              <Link className="login-btn" to="/login">Login</Link>
+              <Link className="register-btn" to="/register">Register</Link>
+            </>
+          )}
         </div>
       </div>
     </nav>

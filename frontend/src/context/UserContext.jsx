@@ -16,7 +16,7 @@ export const UserProvider = ({ children }) => {
     if (token) {
       axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
       fetchUserProfile();
-      fetchStudyPlans();  // ✅ Ensure Study Plans are fetched
+      fetchStudyPlans();  
     } else {
       setUser(null);
       setTasks([]);
@@ -102,6 +102,38 @@ export const UserProvider = ({ children }) => {
       console.error("❌ Error adding task:", error.response?.data || error.message);
     }
   };
+  // Update task
+  const updateTask = async (taskId, updatedTaskData) => {
+    try {
+      console.log("📌 Updating Task:", taskId, updatedTaskData);
+      const response = await axios.put(`${API_BASE_URL}/api/tasks/${taskId}`, updatedTaskData, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+  
+      setTasks(response.data.tasks);
+      setTaskSummary(response.data.summary);
+      console.log("✅ Task updated successfully");
+    } catch (error) {
+      console.error("❌ Error updating task:", error.response?.data || error.message);
+    }
+  };
+  // Delete task
+  const deleteTask = async (taskId) => {
+    try {
+      console.log("📌 Deleting Task:", taskId);
+      const response = await axios.delete(`${API_BASE_URL}/api/tasks/${taskId}`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+  
+      setTasks(response.data.tasks);
+      setTaskSummary(response.data.summary);
+      console.log("✅ Task deleted successfully");
+    } catch (error) {
+      console.error("❌ Error deleting task:", error.response?.data || error.message);
+    }
+  };
+  
+  
 
   // ✅ Add a New Study Plan
   const addStudyPlan = async (studyPlanData) => {

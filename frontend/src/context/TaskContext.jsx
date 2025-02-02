@@ -9,7 +9,7 @@ export const TaskProvider = ({ children }) => {
   const [tasks, setTasks] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const API_BASE_URL = "http://127.0.0.1:5000/api/tasks";
+  const API_BASE_URL = "https://phase-4-project-7ot3.onrender.com/api/tasks";
 
   // ✅ Fetch tasks when the component mounts or user changes
   useEffect(() => {

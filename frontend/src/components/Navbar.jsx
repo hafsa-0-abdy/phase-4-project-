@@ -31,6 +31,10 @@ const Navbar = () => {
             <li className="nav-item">
               <Link className="nav-link" to="/profile">Profile</Link>
             </li>
+            {/* <li className="nav-item">
+              <Link className="nav-link" to="/study-plans">Study Plans</Link>
+            </li> */}
+
             {user ? (
               <li className="nav-item">
                 <button className="btn btn-danger ms-3" onClick={handleLogout}>

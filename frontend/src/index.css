@@ -12,8 +12,19 @@ body {
 /* Navbar */
 .navbar {
   display: flex;  
-  justify-content: space-between;  
+  justify-content: space-between; 
+  align-items:center;
+  padding: 1rem;
+   
 }
+.navbar a {
+  color: #e222a8;
+  text-decoration: none;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+  &:hover {
+    color: #270513;}
+  }
 
 
 /* Footer */

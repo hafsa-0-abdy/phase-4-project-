@@ -29,5 +29,9 @@ def login():
     if not user or not check_password_hash(user.password, data["password"]):
         return jsonify({"error": "Invalid credentials"}), 401
 
-    access_token = create_access_token(identity=user.id)
+    print(f"User ID Type: {type(user.id)}")  # ✅ Debugging: Confirm type
+
+    # ✅ Explicitly convert user ID to a string to avoid "subject must be a string" error
+    access_token = create_access_token(identity=str(user.id))
+
     return jsonify({"access_token": access_token, "user_id": user.id}), 200

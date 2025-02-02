@@ -1,6 +1,12 @@
 
 body {
   background-color: whitesmoke; /* Light gray */
+  margin: 0;
+  padding-top: 50px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  letter-spacing: 0.02em;
   color: rgb(22, 132, 196);
   font-family: "Arial", sans-serif;
   min-height: 100vh;

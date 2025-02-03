@@ -81,22 +81,22 @@ you can watch the live link from (https://www.awesomescreenshot.com/video/361627
 
 ## Doc Link
 
-You can view the project documents of the app here:(https://docs.google.com/document/d/116XsRrb7mrHsT_zBqYtYvydLm85WLItZtnaa8bV98hs/edit?)usp=sharing"
+You can view the project documents of the app here (https://docs.google.com/document/d/116XsRrb7mrHsT_zBqYtYvydLm85WLItZtnaa8bV98hs/edit?)usp=sharing"
 
 ## DEMO VID 
 
-You can watch a demo of the app here:(https://www.awesomescreenshot.com/video/36162742?key=52cb10f48a9afb840d85bb29dcff0e1f)
+You can watch a demo of the app here (https://www.awesomescreenshot.com/video/36162742?key=52cb10f48a9afb840d85bb29dcff0e1f)
 
 ##  GitHub Repository
 
-View the source code on GitHub:(https://github.com/hafsa-0-abdy/phase-4-project-.git)
+View the source code on GitHub (https://github.com/hafsa-0-abdy/phase-4-project-.git)
 
 ## Frontend vercel link 
-You can view the frontend from vercel through this link:(https://vercel.com/hafsa-0-abdys-projects/productivityapp/4HTMkyWEABdCea95PqMxXLpj4ecV)
+You can view the frontend from vercel through this link (https://vercel.com/hafsa-0-abdys-projects/productivityapp/4HTMkyWEABdCea95PqMxXLpj4ecV)
 
 
 ## Backend Render Link
-You can view the backend from render link:(https://phase-4-project-7ot3.onrender.com)
+You can view the backend from render link (https://phase-4-project-7ot3.onrender.com)
 
 
 ## known bugs 
@@ -136,7 +136,7 @@ Bootstrap for UI styling
 ## Support & Contact Details
 
 For any issues, suggestions, or feedback, reach out to:
-📧 Email: hafsaabdirizack0@gmail.com
+📧 Email: (hafsaabdirizack0@gmail.com)
 
 ## License
 

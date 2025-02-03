@@ -26,7 +26,6 @@ To tackle these challenges, the app offers the following features:
 - **Collaborative Features:** Share tasks and collaborate with classmates on projects.
 - **Responsive Design:** A clean, mobile-friendly interface for seamless access.
 
-
 ### Task Management
 - **Add Task:** Create a new task by providing a title, description, due date, priority level, and status.
 - **View Tasks:** Display a list of tasks with their current status (Pending, In Progress, Completed).
@@ -60,8 +59,9 @@ To tackle these challenges, the app offers the following features:
 ## Setup/Installation Instructions
 
 ### 1. Clone the Repository
-```bash
-git clone (https://github.com/hafsa-0-abdy/phase-4-project-.git)
+
+git clone https://github.com/hafsa-0-abdy/phase-4-project-.git
+
 
 
 ## Features

@@ -77,26 +77,22 @@ git clone (https://github.com/hafsa-0-abdy/phase-4-project-.git)
  Dashboard – View an overview of your tasks and study plans.
 
 ## Demo Links
-you can watch the live link from (https://www.awesomescreenshot.com/video/36162742?key=52cb10f48a9afb840d85bb29dcff0e1f)
+[Watch the Live Demo](https://www.awesomescreenshot.com/video/36162742?key=52cb10f48a9afb840d85bb29dcff0e1f)
 
-## Doc Link
+## Documentation
+[View the Project Documents](https://docs.google.com/document/d/116XsRrb7mrHsT_zBqYtYvydLm85WLItZtnaa8bV98hs/edit?usp=sharing)
 
-You can view the project documents of the app here (https://docs.google.com/document/d/116XsRrb7mrHsT_zBqYtYvydLm85WLItZtnaa8bV98hs/edit?)usp=sharing"
+## Demo Video
+[Watch the Demo Video](https://www.awesomescreenshot.com/video/36162742?key=52cb10f48a9afb840d85bb29dcff0e1f)
 
-## DEMO VID 
+## GitHub Repository
+[View the Source Code on GitHub](https://github.com/hafsa-0-abdy/phase-4-project-.git)
 
-You can watch a demo of the app here (https://www.awesomescreenshot.com/video/36162742?key=52cb10f48a9afb840d85bb29dcff0e1f)
+## Frontend (Vercel)
+[View the Frontend on Vercel](https://vercel.com/hafsa-0-abdys-projects/productivityapp/4HTMkyWEABdCea95PqMxXLpj4ecV)
 
-##  GitHub Repository
-
-View the source code on GitHub (https://github.com/hafsa-0-abdy/phase-4-project-.git)
-
-## Frontend vercel link 
-You can view the frontend from vercel through this link (https://vercel.com/hafsa-0-abdys-projects/productivityapp/4HTMkyWEABdCea95PqMxXLpj4ecV)
-
-
-## Backend Render Link
-You can view the backend from render link (https://phase-4-project-7ot3.onrender.com)
+## Backend (Render)
+[View the Backend on Render](https://phase-4-project-7ot3.onrender.com)
 
 
 ## known bugs 
@@ -105,7 +101,7 @@ The app currently functions as expected. If you encounter any issues, please rep
 
 ## Technologies Used
 
-Backend:
+1. Backend:
 
 Flask
 
@@ -117,7 +113,7 @@ SQLAlchemy
 
 Alembic (for database migrations)
 
-## Frontend:
+ 2. Frontend:
 
 React.js
 
